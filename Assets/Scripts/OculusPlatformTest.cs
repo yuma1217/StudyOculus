@@ -30,9 +30,17 @@ public class OculusPlatformTest : MonoBehaviour {
 
 	// Use this for initialization
     void Start () {
-		
+		Entitlements.IsUserEntitledToApplication().OnComplete(IsEntitledCallback);
+		Oculus.Platform.Request.RunCallbacks();
 	}
 
+	void IsEntitledCallback(Message msg){
+		if(msg.IsError){
+			Debug.Log("IsEntitledCallback is error");
+			return;
+		}
+		Debug.Log("Entitlement check success");
+	}
     private void TransitionToState(State newState)
     {
 
