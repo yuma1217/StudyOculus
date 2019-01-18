@@ -131,6 +131,8 @@ public class OculusPlatformTest : MonoBehaviour {
         }
         Voip.SetMicrophoneFilterCallback(micFilterDelegate);
 		 */
+
+
     }
 
     private void TransitionToState(State newState)
@@ -144,6 +146,21 @@ public class OculusPlatformTest : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		/* 
+		// Look for updates from remote users
+        p2pManager.GetRemotePackets();
+
+        // update avatar mouths to match voip volume
+        foreach (KeyValuePair<ulong, RemotePlayer> kvp in remoteUsers)
+        {
+            float remoteVoiceCurrent = Mathf.Clamp(kvp.Value.voipSource.peakAmplitude * VOIP_SCALE, 0f, 1f);
+            kvp.Value.RemoteAvatar.VoiceAmplitude = remoteVoiceCurrent;
+        }
+
+        if (localAvatar != null)
+        {
+            localAvatar.VoiceAmplitude = Mathf.Clamp(voiceCurrent * VOIP_SCALE, 0f, 1f);
+        }
+		*/
 	}
 }

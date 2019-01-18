@@ -68,18 +68,21 @@ public class PlayerController : SocialPlatformManager
             // Bring up friend invite list
             if (OVRInput.GetDown(OVRInput.Button.Three))
             {
+                Debug.Log("Input get three");
                 Rooms.LaunchInvitableUserFlow (roomManager.roomID);
             }
 
             // Toggle Camera
             if (OVRInput.GetDown(OVRInput.Button.Four))
             {
+                Debug.Log("Input get four");
                 ToggleCamera();
             }
 
             // Toggle Help UI
             if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
             {
+                Debug.Log("input get primaryThumbstick");
                 ToggleUI();
             }
         }
