@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Oculus/Avatar/Samples/SocialStarter/Assets/MainScene.unity
+    guid: 236a5f96528802e47a70d6e47ebd3c16
