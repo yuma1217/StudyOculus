@@ -265,7 +265,6 @@ PlayerSettings:
     m_Enabled: 1
     m_Devices:
     - Oculus
-    - OpenVR
   - m_BuildTarget: Android
     m_Enabled: 1
     m_Devices:
@@ -644,7 +643,7 @@ PlayerSettings:
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: 70cb3f18-5151-4ed8-8657-2bdcf2a39ffa
   projectName: ResearchOculusPlatform
   organizationId: yuma1217_id
